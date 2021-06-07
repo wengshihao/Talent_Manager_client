@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ApplyFragment2"
+    android:background="@drawable/ic_talent_picture18">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="346dp"
+            android:layout_height="660dp"
+            android:layout_marginTop="68dp"
+            android:src="@drawable/ic_talent_picture9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/apply_face2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="52dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView3"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="52dp"
+            android:text="公司名称："
+            android:textSize="18sp"
+            android:textColor="#7C7571"
+            android:fontFamily="@font/need"
+            app:layout_constraintStart_toEndOf="@+id/apply_face2"
+            app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+        <TextView
+            android:id="@+id/apply_company2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:textColor="#7C7571"
+            android:fontFamily="@font/need"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/apply_face2"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:text="招聘岗位："
+            android:textColor="#7C7571"
+            android:fontFamily="@font/need"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/apply_face2"
+            app:layout_constraintTop_toBottomOf="@+id/apply_company2" />
+
+        <TextView
+            android:id="@+id/apply_work2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:textColor="#7C7571"
+            android:fontFamily="@font/need"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/apply_face2"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="44dp"
+            android:text="工作要求："
+            android:textColor="#7C7571"
+            android:fontFamily="@font/need"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/apply_face2" />
+
+        <TextView
+            android:id="@+id/apply_deman2"
+            android:layout_width="281dp"
+            android:layout_height="280dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/need"
+            android:text="TextView"
+            android:textColor="#7C7571"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <Button
+            android:id="@+id/apply_submit2"
+            android:layout_width="191dp"
+            android:layout_height="51dp"
+            android:layout_marginBottom="80dp"
+            android:background="@drawable/ic_talent_picture20"
+            android:text="确认投递"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/apply_phone2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="联系企业"
+            android:textSize="20sp"
+            android:textColor="#A3A3A3"
+            android:fontFamily="@font/need"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apply_submit2"
+           />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

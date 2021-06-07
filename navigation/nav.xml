@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/resumeFragment">
+
+    <fragment
+        android:id="@+id/resumeFragment"
+        android:name="com.example.talent_manager_client.ResumeFragment"
+        android:label="fragment_resume"
+        tools:layout="@layout/fragment_resume" />
+    <fragment
+        android:id="@+id/fileFragment"
+        android:name="com.example.talent_manager_client.FileFragment"
+        android:label="fragment_file"
+        tools:layout="@layout/fragment_file" />
+    <fragment
+        android:id="@+id/applyFragment"
+        android:name="com.example.talent_manager_client.ApplyFragment"
+        android:label="fragment_apply"
+        tools:layout="@layout/fragment_apply" />
+        <action
+            android:id="@+id/action_applyFragment_to_applyFragment2"
+            app:destination="@id/applyFragment2" />
+    <fragment
+        android:id="@+id/meFragment"
+        android:name="com.example.talent_manager_client.MeFragment"
+        android:label="fragment_me"
+        tools:layout="@layout/fragment_me" />
+    <fragment
+        android:id="@+id/applyFragment2"
+        android:name="com.example.talent_manager_client.ApplyFragment2"
+        android:label="fragment_apply2"
+        tools:layout="@layout/fragment_apply2" >
+        <action
+            android:id="@+id/action_applyFragment2_to_applyFragment"
+            app:destination="@id/applyFragment" />
+    </fragment>
+</navigation>
